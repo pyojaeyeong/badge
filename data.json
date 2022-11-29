@@ -5,40 +5,49 @@
       "id": 1,
       "name": "DRACO",
       "game": "MIR4",
-      "dollar": "1.9312",
-      "rate": "9.66"
+      "price": 1.9312,
+      "increase": 9.66,
+      "variation": false
     },
     {
       "tokenImg": "token_tornado.png",
       "id": 2,
       "name": "TORNADO",
       "game": "CrypTornado",
-      "dollar": "1.9312",
-      "rate": "9.66"
+
+      "price": 1.9312,
+      "increase": 9.66,
+      "variation": false
     },
     {
       "tokenImg": "token_debco.png",
       "id": 3,
       "name": "DEBCO",
       "game": "Dark Eden M",
-      "dollar": "1.9312",
-      "rate": "9.66"
+
+      "price": 1.9312,
+      "increase": 9.66,
+      "variation": false
     },
     {
       "tokenImg": "token_reflect.png",
       "id": 4,
       "name": "REFLECT",
       "game": "MIR4",
-      "dollar": "1.9312",
-      "rate": "9.66"
+
+      "price": 1.9312,
+      "increase": 9.66,
+      "variation": false
     },
     {
       "tokenImg": "token_tig.png",
       "id": 5,
       "name": "TIG",
       "game": "YULGANG GLOBAL",
-      "dollar": "1.9312",
-      "rate": "9.66"
+
+      "price": 1.9312,
+      "increase": 9.66,
+      "variation": false
     }
   ]
 }
