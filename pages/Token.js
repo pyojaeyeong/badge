@@ -11,8 +11,10 @@ const Token = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
+    arrows: false,
+    dots: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -20,7 +22,6 @@ const Token = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
         },
       },
       {
@@ -53,6 +54,7 @@ const Token = () => {
                 alt="badge"
                 className={styles.tokenBadge}
               />
+              <span className={styles.badge}>{token.badge}</span>
               <Image
                 className={styles.tokenImg}
                 src={`/${token.tokenImg}`}
@@ -61,12 +63,13 @@ const Token = () => {
                 alt={token.name}
               />
               <strong className={styles.tokenName}>{token.name}</strong>
-              <span className={styles.tokenGame}>{token.game}</span>
+              <div className={styles.gameList}>
+                <span className={styles.tokenGame}>{token.game}</span>
+                <span className={styles.tag}>{token.tag}</span>
+              </div>
               <div className={styles.price}>
                 <span className={styles.tokenDollar}>${token.price}</span>
-                <span className={styles.tokenRate}>
-                  {token.type[0].increase}%
-                </span>
+                <span className={styles.tokenRate}>{token.typevalue}%</span>
               </div>
             </li>
           ))}
