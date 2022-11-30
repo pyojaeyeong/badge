@@ -22,20 +22,13 @@ $badgeList: (
   color: #1a1a1a;
   font-weight: 700;
   font-size: 12px;
-  transform: rotate(-45deg) translate(-40px, -30px);
+  transform: rotate(-45deg) translate(-30px, -22px);
 }
 
-$color-palette: #dad5d2 #3a3532 #375945 #5b8767 #a6c198;
-
-$bgColor: rgba(172, 30, 255, 0.137129) rgba(188, 63, 51, 0.2)
-  rgba(204, 0, 72, 0.2) rgba(46, 220, 178, 0.2) rgba(199, 115, 38, 0.2);
-
-@each $color in $color-palette {
-  $i: index($color-palette, $color); //index는 list의 내장함수
-  .tokens li:nth-child(#{$i}) {
-    background: $color;
-  }
-}
+$bgColor: (
+  rgba(172, 30, 255, 0.137129) rgba(188, 63, 51, 0.2) rgba(204, 0, 72, 0.2)
+    rgba(46, 220, 178, 0.2) rgba(199, 115, 38, 0.2)
+);
 
 .tokens {
   position: relative;
@@ -44,12 +37,19 @@ $bgColor: rgba(172, 30, 255, 0.137129) rgba(188, 63, 51, 0.2)
   backdrop-filter: blur(30px);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background: radial-gradient(
-      85.21% 85.21% at 50% -17.61%,
-      rgba(199, 115, 38, 0.2) 0%,
-      rgba(199, 115, 38, 0) 100%
-    ),
-    rgba(255, 255, 255, 0.05);
+}
+
+.tokensList {
+  display: flex;
+  @each $color in $bgColor {
+    $i: index($bgColor, $color); //index는 list의 내장함수
+    // .tokenList li:nth-child(#{$i}) {
+    //   background: $color;
+    // }
+    li:nth-child(#{$i}) {
+      background: $color;
+    }
+  }
 }
 
 $color: #ffffff;
@@ -62,15 +62,15 @@ $color: #ffffff;
   font-size: 20px;
   line-height: 26px;
   padding: 8px 0;
-}
 
-.tokenGame {
-  display: block;
-  text-align: center;
-  color: #bfbfbf;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  & .tokenGame {
+    display: block;
+    text-align: center;
+    color: #bfbfbf;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .gameList {
@@ -127,6 +127,6 @@ $color: #ffffff;
   padding: 3px 6px;
 }
 
-// [class*="tokensList"] {
-//   background: ;
+// [class*="slider"] {
+//   display: flex;
 // }

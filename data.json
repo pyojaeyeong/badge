@@ -6,7 +6,6 @@
       "id": 1,
       "name": "DRACO",
       "game": "MIR4",
-      "tag": "",
       "price": 1.9312,
       "type": "increase",
       "typevalue": "+9.66"
@@ -28,7 +27,6 @@
       "id": 3,
       "name": "DEBCO",
       "game": "Dark Eden M",
-      "tag": "",
       "price": 1.9312,
       "type": "increase",
       "typevalue": "+9.66"
@@ -50,7 +48,6 @@
       "id": 5,
       "name": "TIG",
       "game": "YULGANG GLOBAL",
-      "tag": "",
       "price": 1.9312,
       "type": "increase",
       "typevalue": "+9.66"

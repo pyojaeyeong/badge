@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import data from "../data.json";
 import styles from "../scss/Token.module.css";
@@ -8,13 +8,13 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Token = () => {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
     dots: false,
+    vertical: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -41,10 +41,11 @@ const Token = () => {
       },
     ],
   };
+
   return (
     <>
-      <ul className={styles.tokensList}>
-        <Slider {...settings} className={styles.slider}>
+      <Slider {...settings} className={styles.slider}>
+        <ul className={styles.tokensList}>
           {data.token.map((token) => (
             <li key={token.id} className={styles.tokens}>
               <Image
@@ -65,7 +66,9 @@ const Token = () => {
               <strong className={styles.tokenName}>{token.name}</strong>
               <div className={styles.gameList}>
                 <span className={styles.tokenGame}>{token.game}</span>
-                <span className={styles.tag}>{token.tag}</span>
+                {!token.tag ? null : (
+                  <span className={styles.tag}>{token.tag}</span>
+                )}
               </div>
               <div className={styles.price}>
                 <span className={styles.tokenDollar}>${token.price}</span>
@@ -73,8 +76,8 @@ const Token = () => {
               </div>
             </li>
           ))}
-        </Slider>
-      </ul>
+        </ul>
+      </Slider>
     </>
   );
 };
