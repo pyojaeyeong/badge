@@ -1,53 +1,80 @@
 {
   "token": [
     {
+      "badge": "Top Gainer",
       "tokenImg": "token_draco.png",
       "id": 1,
       "name": "DRACO",
       "game": "MIR4",
       "price": 1.9312,
-      "increase": 9.66,
-      "variation": false
+
+      "type": [
+        {
+          "increase": "+9.66",
+          "decrease": "-3.24",
+          "none": 0
+        }
+      ]
     },
     {
+      "badge": "Top Loser",
       "tokenImg": "token_tornado.png",
       "id": 2,
       "name": "TORNADO",
       "game": "CrypTornado",
-
       "price": 1.9312,
-      "increase": 9.66,
-      "variation": false
+      "type": [
+        {
+          "increase": "+9.66",
+          "decrease": "-3.24",
+          "none": 0
+        }
+      ]
     },
     {
+      "badge": "Recentlry Added",
       "tokenImg": "token_debco.png",
       "id": 3,
       "name": "DEBCO",
       "game": "Dark Eden M",
-
       "price": 1.9312,
-      "increase": 9.66,
-      "variation": false
+      "type": [
+        {
+          "increase": "+9.66",
+          "decrease": "-3.24",
+          "none": 0
+        }
+      ]
     },
     {
+      "badge": "Top ROI",
       "tokenImg": "token_reflect.png",
       "id": 4,
       "name": "REFLECT",
       "game": "MIR4",
-
       "price": 1.9312,
-      "increase": 9.66,
-      "variation": false
+      "type": [
+        {
+          "increase": "+9.66",
+          "decrease": "-3.24",
+          "none": 0
+        }
+      ]
     },
     {
+      "badge": "Most Played",
       "tokenImg": "token_tig.png",
       "id": 5,
       "name": "TIG",
       "game": "YULGANG GLOBAL",
-
       "price": 1.9312,
-      "increase": 9.66,
-      "variation": false
+      "type": [
+        {
+          "increase": "+9.66",
+          "decrease": "-3.24",
+          "none": 0
+        }
+      ]
     }
   ]
 }

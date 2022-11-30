@@ -3,6 +3,38 @@
   margin: auto;
 }
 
+.tokenBadge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.tokenBadge .tokenBadge {
+  content: "";
+  color: red;
+  z-index: 10;
+}
+.tokenBadge .tokenBadge {
+  content: "";
+  color: red;
+  z-index: 10;
+}
+.tokenBadge .tokenBadge {
+  content: "";
+  color: red;
+  z-index: 10;
+}
+.tokenBadge .tokenBadge {
+  content: "";
+  color: red;
+  z-index: 10;
+}
+.tokenBadge .tokenBadge {
+  content: "";
+  color: red;
+  z-index: 10;
+}
+
 .tokens {
   position: relative;
   padding: 30px 20px;

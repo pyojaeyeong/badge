@@ -47,17 +47,26 @@ const Token = () => {
           {data.token.map((token) => (
             <li key={token.id} className={styles.tokens}>
               <Image
+                src="/image/badge.png"
+                width={112}
+                height={112}
+                alt="badge"
+                className={styles.tokenBadge}
+              />
+              <Image
                 className={styles.tokenImg}
                 src={`/${token.tokenImg}`}
-                width={70}
-                height={70}
+                width={80}
+                height={80}
                 alt={token.name}
               />
               <strong className={styles.tokenName}>{token.name}</strong>
               <span className={styles.tokenGame}>{token.game}</span>
               <div className={styles.price}>
                 <span className={styles.tokenDollar}>${token.price}</span>
-                <span className={styles.tokenRate}>+{token.increase}%</span>
+                <span className={styles.tokenRate}>
+                  {token.type[0].increase}%
+                </span>
               </div>
             </li>
           ))}
