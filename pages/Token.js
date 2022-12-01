@@ -19,7 +19,6 @@ const Token = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
         },
       },
       {
@@ -33,8 +32,8 @@ const Token = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],
@@ -60,7 +59,7 @@ const Token = () => {
               <span className={styles.badge}>{token.badge}</span>
               <Image
                 className={styles.tokenImg}
-                src={`/${token.tokenImg}`}
+                src={`/image/${token.tokenImg}`}
                 width={80}
                 height={80}
                 alt={token.name}
