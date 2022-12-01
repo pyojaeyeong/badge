@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import data from "../data.json";
 import styles from "../scss/Token.module.css";
@@ -44,7 +43,7 @@ const Token = () => {
   return (
     <>
       <ul className={styles.tokensList}>
-        <Slider {...settings} className={styles.slider}>
+        <Slider {...settings}>
           {data.token.map((token) => (
             <li
               key={token.id}
@@ -56,6 +55,7 @@ const Token = () => {
                 height={112}
                 alt="badge"
                 className={styles.tokenBadge}
+                priority
               />
               <span className={styles.badge}>{token.badge}</span>
               <Image
