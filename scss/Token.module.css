@@ -1,3 +1,8 @@
+.tokensList {
+  position: relative;
+  width: 100%;
+}
+
 .tokenImg {
   display: block;
   margin: auto;
@@ -39,6 +44,15 @@
 
 .tigBgColor {
   background: radial-gradient(85.21% 85.21% at 50% -17.61%, rgba(199, 115, 38, 0.2) 0%, rgba(199, 115, 38, 0) 100%), rgba(255, 255, 255, 0.05);
+}
+
+.title {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 50px;
+  color: #ffffff;
 }
 
 .tokens {

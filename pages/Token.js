@@ -4,6 +4,7 @@ import data from "../data.json";
 import styles from "../scss/Token.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 
 const Token = () => {
   const settings = {
@@ -33,7 +34,7 @@ const Token = () => {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         },
       },
     ],
@@ -42,6 +43,10 @@ const Token = () => {
   return (
     <>
       <ul className={styles.tokensList}>
+        <Link href="/" className={styles.title}>
+          TOKENS
+        </Link>
+
         <Slider {...settings}>
           {data.token.map((token) => (
             <li

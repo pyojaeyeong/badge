@@ -39,20 +39,34 @@ a {
   }
 }
 
-.slick-slide,
-.slick-active {
-  margin: 200px auto;
-  text-align: center;
-}
-
 .slick-slide > div {
   display: inline-block;
 }
 
-.slick-list {
+.slick-slider {
+  text-align: center;
+}
+
+/* .slick-list {
   margin-right: -20px;
 }
 
 .slick-slide {
   padding-right: 20px;
+} */
+
+@media screen and (min-width: 1300px) {
+  body {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slick-list {
+    margin-right: -20px;
+  }
+
+  .slick-slide {
+    padding-right: 20px;
+  }
 }

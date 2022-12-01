@@ -1,3 +1,8 @@
+.tokensList {
+  position: relative;
+  width: 100%;
+}
+
 .tokenImg {
   display: block;
   margin: auto;
@@ -72,9 +77,14 @@ $badgeList: (
     rgba(255, 255, 255, 0.05);
 }
 
-// .tokensList {
-//   text-align: center;
-// }
+.title {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 50px;
+  color: #ffffff;
+}
 
 .tokens {
   position: relative;
