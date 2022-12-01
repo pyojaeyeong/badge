@@ -14,7 +14,6 @@ const Token = () => {
     slidesToScroll: 1,
     arrows: false,
     dots: false,
-    vertical: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -44,10 +43,13 @@ const Token = () => {
 
   return (
     <>
-      <Slider {...settings} className={styles.slider}>
-        <ul className={styles.tokensList}>
+      <ul className={styles.tokensList}>
+        <Slider {...settings} className={styles.slider}>
           {data.token.map((token) => (
-            <li key={token.id} className={styles.tokens}>
+            <li
+              key={token.id}
+              className={`${styles.tokens} ${styles[token.bgColor]}`}
+            >
               <Image
                 src="/image/badge.png"
                 width={112}
@@ -76,8 +78,8 @@ const Token = () => {
               </div>
             </li>
           ))}
-        </ul>
-      </Slider>
+        </Slider>
+      </ul>
     </>
   );
 };

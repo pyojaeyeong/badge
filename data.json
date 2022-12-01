@@ -8,7 +8,8 @@
       "game": "MIR4",
       "price": 1.9312,
       "type": "increase",
-      "typevalue": "+9.66"
+      "typevalue": "+9.66",
+      "bgColor": "dracoBgColor"
     },
     {
       "badge": "Top Loser",
@@ -19,7 +20,8 @@
       "tag": "+2",
       "price": 1.9312,
       "type": "increase",
-      "typevalue": "+9.66"
+      "typevalue": "+9.66",
+      "bgColor": "tornadoBgColor"
     },
     {
       "badge": "Recentlry Added",
@@ -29,7 +31,8 @@
       "game": "Dark Eden M",
       "price": 1.9312,
       "type": "increase",
-      "typevalue": "+9.66"
+      "typevalue": "+9.66",
+      "bgColor": "debcoBgColor"
     },
     {
       "badge": "Top ROI",
@@ -40,7 +43,8 @@
       "tag": "+2",
       "price": 1.9312,
       "type": "increase",
-      "typevalue": "+9.66"
+      "typevalue": "+9.66",
+      "bgColor": "reflectBgColor"
     },
     {
       "badge": "Most Played",
@@ -50,7 +54,8 @@
       "game": "YULGANG GLOBAL",
       "price": 1.9312,
       "type": "increase",
-      "typevalue": "+9.66"
+      "typevalue": "+9.66",
+      "bgColor": "tigBgColor"
     }
   ]
 }
